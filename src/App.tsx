@@ -11,7 +11,7 @@ function App() {
   const ws = useRef<WebSocket | null>(null); // 接続管理
 
   useEffect(() => {
-    ws.current = new WebSocket('ws://chat-express-lake.vercel.app/ws'); // WebSocket
+    ws.current = new WebSocket('wss://chat-express-zpxu.onrender.com/ws'); // WebSocket
 
     ws.current.onopen = () => { // 接続が開始されたら
       console.log('WebSocket connection established');
